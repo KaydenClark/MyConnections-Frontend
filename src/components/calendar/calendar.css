@@ -1,0 +1,12 @@
+.calendar{
+    float: right;
+    margin-right: 5vh;
+    width: 50vw;
+    height: auto;
+}
+
+.monday{
+    size: 80px;
+    width: 20px;
+    height: auto;
+}

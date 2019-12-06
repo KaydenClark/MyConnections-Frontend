@@ -1,0 +1,2 @@
+import './newList.css'
+
