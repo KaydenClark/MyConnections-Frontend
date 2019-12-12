@@ -5,8 +5,9 @@ import {
     Route,
     Link
   } from "react-router-dom";
-import ToDoList from './components/toDoList';
+import ToDoList from './components/getTaskList/toDoList';
 import TheCalendar from './components/calendar/calendar'
+import SignIn from './components/signIn/signIn'
 
 export default function NavBar () {
   
@@ -67,7 +68,7 @@ export default function NavBar () {
     }
     
     function Login() {
-        return <h2>Login</h2>
+        return <SignIn />
     }
 
     function ToDo() {

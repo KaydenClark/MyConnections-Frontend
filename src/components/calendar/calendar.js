@@ -1,6 +1,6 @@
 import React from 'react';
 import Calendar from 'react-calendar';
-import TileContent from 'react-calendar'
+// import TileContent from 'react-calendar'
 import './calendar.css'
  
 export default class TheCalendar extends React.Component {
