@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import ListItem from './listItems'
+import { Link } from 'react-router-dom'
 
 
 const TODOLISTS_API = 'http://localhost:5000/lists';
@@ -42,7 +43,9 @@ export default class ToDoList extends React.Component {
             return ( 
                 <div>
                     <p></p>
-                    <button>Add List</button><br />
+                    <Link to= "/newList">
+                        <button>Add List</button><br />
+                    </Link>
                     <ul style = {style}>
                         {this.state.lists}
                     </ul>

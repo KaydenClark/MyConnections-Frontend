@@ -8,6 +8,7 @@ import {
 import ToDoList from './components/getTaskList/toDoList';
 import TheCalendar from './components/calendar/calendar'
 import SignIn from './components/signIn/signIn'
+import NewList from './components/newList/newList'
 
 export default function NavBar () {
   
@@ -32,12 +33,18 @@ export default function NavBar () {
                 <li>
                   <Link to="/calendar">Calendar</Link>
                 </li>
+                <li>
+                  <Link to="/calendar">New</Link>
+                </li>
               </ul>
             </nav>
     
             {/* A <Switch> looks through its children <Route>s and
                 renders the first one that matches the current URL. */}
             <Switch>
+              <Route path="/newList">
+                <CreateList />
+              </Route>
               <Route path="/about">
                 <About />
               </Route>
@@ -77,4 +84,8 @@ export default function NavBar () {
 
     function Calendar() {
         return <TheCalendar />
+    }
+
+    function CreateList() {
+      return <NewList />
     }
