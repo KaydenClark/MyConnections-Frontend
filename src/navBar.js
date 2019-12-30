@@ -33,9 +33,9 @@ export default function NavBar () {
                 <li>
                   <Link to="/calendar">Calendar</Link>
                 </li>
-                <li>
-                  <Link to="/calendar">New</Link>
-                </li>
+                {/* <li>
+                  <Link to="/calendar"></Link>
+                </li> */}
               </ul>
             </nav>
     
